@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/style.css" />
+    <script src="./src/app.js" defer type="module"></script>
+    <title>Frontend Mentor | Results summary component</title>
+  </head>
+  <body class="min-h-screen grid md:place-content-center">
+    <div
+      class="grid md:grid-cols-2 md:max-w-screen-md md:shadow-2xl md:rounded-[30px] overflow-hidden"
+    >
+      <!-- Results -->
+      <div
+        class="bg-hero-gradient text-white grid justify-items-center gap-y-7 items-start text-center px-8 pt-6 pb-10 rounded-b-[30px] md:rounded-t-[30px] md:pt-10 md:px-16"
+      >
+        <h1 class="text-2xl text-[hsl(241_100%_89%)] font-bold">Your Result</h1>
+        <div
+          class="flex flex-col items-center justify-center gap-2 bg-circle-gradient w-36 aspect-square rounded-full md:w-48"
+        >
+          <p class="text-6xl font-extrabold leading-none md:text-7xl">76</p>
+          <p class="text-slate-400">of 100</p>
+        </div>
+        <div class="flex flex-col items-center justify-center gap-2.5">
+          <h2 class="text-3xl font-bold">Great</h2>
+          <p class="text-center text-[hsl(241_100%_89%)]">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
+      </div>
+      <!-- End of Result -->
+      <!-- Summary -->
+      <div class="flex px-6 py-7 md:px-10 md:py-10">
+        <div class="w-full grid gap-y-7">
+          <h2 class="text-2xl text-slate-800 font-bold">Summary</h2>
+          <div id="summary-list" class="grid gap-y-4"></div>
+          <button
+            class="h-14 flex items-center justify-center px-4 py-2.5 rounded-full bg-slate-700 text-white leading-none tracking-wide hover:bg-blue-700 hover:shadow-lg transition duration-200"
+          >
+            Continue
+          </button>
+        </div>
+      </div>
+      <!-- End of Summary -->
+    </div>
+  </body>
+</html>
